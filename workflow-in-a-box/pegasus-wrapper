@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+# make sure our environment is sane
+export USER="pegasus"
+export HOME="/home/pegasus"
+
+cd /home/pegasus/workflow
+python3 workflow.py
+
+#just a test
+cat outputs/color.out

@@ -1,0 +1,2 @@
+# for additional pywaggle install options, see: https://github.com/waggle-sensor/pywaggle#installation-guides
+pywaggle[all]==0.56.0

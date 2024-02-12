@@ -1,0 +1,13 @@
+name: "pegasus-workflow-test"
+version: "0.1.0"
+description: "pegasus-workflow-test"
+keywords: ""
+authors: "George Papadimitriou"
+collaborators: ""
+funding: ""
+license: ""
+homepage: "https://github.com/papajim/pegasus-sage/tree/edge-workflow"
+source:
+  architectures:
+    - "linux/amd64"
+    - "linux/arm64"

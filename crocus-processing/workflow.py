@@ -144,10 +144,11 @@ class CrocusWorkflow():
             self.wf.add_jobs(wxt_ingest_job)
 
     def submit(self):
-        workflow.write()
+        self.write()
+
         try:
             self.wf.plan(
-                output_dir="./outputs",
+                output_sites=["local"],
                 dir="./submit",
                 submit=True
             )

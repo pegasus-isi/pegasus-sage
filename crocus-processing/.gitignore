@@ -1,3 +1,5 @@
 pegasus.properties
 *.yml
 submit
+scratch
+outputs

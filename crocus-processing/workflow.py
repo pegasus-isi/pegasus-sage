@@ -144,11 +144,12 @@ class CrocusWorkflow():
             self.wf.add_jobs(wxt_ingest_job)
 
     def submit(self):
+        workflow.write()
         try:
             self.wf.plan(
                 output_dir="./outputs",
                 dir="./submit",
-                submit=False
+                submit=True
             )
         #.wait().analyze()
         except Exception as e:
@@ -190,5 +191,4 @@ if __name__ == '__main__':
     print("Creating crocus workflow dag...")
     workflow.create_workflow()
 
-    #workflow.write()
     workflow.submit()

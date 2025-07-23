@@ -11,6 +11,11 @@ This is a special use case for Sage. This directory contains a recipe for buildi
 
 Login to one of the waggle nodes that you have access for. You can easily check that in your [My Nodes Tabbed Menu](https://portal.sagecontinuum.org/account/nodes).
 
+For example
+```
+ssh waggle-dev-node-V030
+```
+
 Once on the node checkout this github repository
 
 ```

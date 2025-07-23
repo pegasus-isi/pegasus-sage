@@ -16,6 +16,9 @@ def query_sage(start_date, end_date):
         }
     )
 
+    if df.empty:
+        return df
+
     # return stats of the temperature data grouped by node + sensor.
     return df.groupby(["meta.vsn", "meta.sensor"]).value.agg(["size", "min", "max", "mean"])
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # this script should run as root and has been tested with ubuntu 20.04
+export DEBIAN_FRONTEND=noninteractive
 
 apt-get update && apt-get -y upgrade
 apt-get install -y linux-headers-$(uname -r)

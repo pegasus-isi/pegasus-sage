@@ -12,7 +12,7 @@ RUN dnf install -y \
         mesa-libGL \
         python3-pip
 
-RUN dnf install -y https://download.pegasus.isi.edu/pegasus/5.0.7dev/pegasus-5.0.7dev-1.el9.x86_64.rpm
+RUN dnf install -y https://download.pegasus.isi.edu/pegasus/5.1.1/pegasus-5.1.1-1.el9.x86_64.rpm
 
 RUN ls -l /usr/lib64/python3.9/site-packages/Pegasus/cli/pegasus-config.py && \
     chmod 644 /usr/lib64/python3.9/site-packages/Pegasus/cli/pegasus-config.py
